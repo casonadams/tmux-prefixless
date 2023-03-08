@@ -9,7 +9,7 @@ case "$cmd" in
 		;;
 
 	# Confirm before killing pane
-	vim|ssh)
+	lvim|nvim|vim|ssh)
 		tmux confirm-before -p "kill-pane running '$cmd'? (y/n)" kill-pane
 		;;
 
