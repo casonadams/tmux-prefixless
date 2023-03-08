@@ -51,9 +51,6 @@ tmux bind-key -T "$keytable" M-j if-shell "$is_vim" 'send-keys M-j' 'select-pane
 tmux bind-key -T "$keytable" M-k if-shell "$is_vim" 'send-keys M-k' 'select-pane -U'
 tmux bind-key -T "$keytable" M-l if-shell "$is_vim" 'send-keys M-l' 'select-pane -R'
 
-tmux bind-key -T "$keytable" M-p if-shell "$is_vim" 'send-keys M-p' 'previous-window'
-tmux bind-key -T "$keytable" M-n if-shell "$is_vim" 'send-keys M-n' 'next-window'
-
 # Toggle zoom
 tmux bind-key -T "$keytable" M-z resize-pane -Z
 
